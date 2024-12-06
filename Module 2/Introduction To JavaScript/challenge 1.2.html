@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge: Change a webpage color</title>
     <style>
-body{
-    font-family: Arial, sans-serif;
-    text-align: Centre;
-    margin-top: 30px;
-}
-button {
-    background-color: blue;
-    color:white;
-}
-button:hover {
-    background-color:#0056b3;
-}
-</style>
+ body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>Change Background Colour</h1>
-  <p> click the button below to change the background colour to blue</p> 
-  <button onclick="changebackgroundcolor">Click Here</button>
+  <h1>Change the Background Color</h1>
+  <button onclick="changeBackgroundColor()">Click Me</button>
+
   <script>
-    // Function to change the background colour to blue
-    function changebackgroundcolor {
-        backgroundcolor="blue";
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = "blue";
     }
-  </script> 
+  </script>
 </body>
 </html>
